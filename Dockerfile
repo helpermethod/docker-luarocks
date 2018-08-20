@@ -1,4 +1,4 @@
-FROM docker-lua:0.1.0
+FROM helpermethod/docker-lua:0.1.0
 
 ARG LUAROCKS_VERSION=3.0.0
 
