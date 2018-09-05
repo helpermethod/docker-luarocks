@@ -8,6 +8,7 @@ RUN apk --no-cache add --virtual build-dependencies \
  && apk --no-cache add \
     curl \
     gcc \
+    git \
     libc-dev \
     openssl \
  && wget -O luarocks.tar.gz https://luarocks.github.io/luarocks/releases/luarocks-${LUAROCKS_VERSION}.tar.gz \
