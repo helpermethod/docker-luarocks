@@ -11,8 +11,11 @@ RUN apk --no-cache add --virtual build-dependencies \
     git \
     libc-dev \
     openssl \
+ && printf 'Downloading LuaRocks\n' \
  && wget -O luarocks.tar.gz https://luarocks.github.io/luarocks/releases/luarocks-${LUAROCKS_VERSION}.tar.gz \
+ && printf 'Checking download hash\n' \
  && printf '%s  luarocks.tar.gz' "$LUAROCKS_DOWNLOAD_SHA256" | sha256sum -c - \
+ && printf 'Installing LuaRocks\n' \
  && tar xvf luarocks.tar.gz \
  && cd luarocks-$LUAROCKS_VERSION \
  && ./configure \
