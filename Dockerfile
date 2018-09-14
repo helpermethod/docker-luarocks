@@ -1,9 +1,13 @@
-FROM helpermethod/docker-lua:0.2.0
+FROM helpermethod/docker-lua:0.3.0
+
+USER root
+WORKDIR /
 
 ARG LUAROCKS_VERSION=3.0.1
 ARG LUAROCKS_DOWNLOAD_SHA256=b989c4b60d6c9edcd65169e5e42fcffbd39cdbebe6b138fa5aea45102f8d9ec0
 
-RUN apk --no-cache add --virtual build-dependencies \
+RUN set -o errexit -o nounset \
+ && apk --no-cache add --virtual build-dependencies \
     make \
  && apk --no-cache add \
     curl \
@@ -24,3 +28,6 @@ RUN apk --no-cache add --virtual build-dependencies \
  && cd .. \
  && rm -rf luarocks.tar.gz luarocks-$LUAROCKS_VERSION \
  && apk del build-dependencies
+
+USER lua
+WORKDIR /home/lua
