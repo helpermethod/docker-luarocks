@@ -15,7 +15,7 @@ RUN set -o errexit -o nounset \
     git \
     libc-dev \
     openssl \
-    zip
+    zip \
  && printf 'Downloading LuaRocks\n' \
  && wget -O luarocks.tar.gz https://luarocks.github.io/luarocks/releases/luarocks-${LUAROCKS_VERSION}.tar.gz \
  && printf 'Checking download hash\n' \
