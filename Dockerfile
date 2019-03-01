@@ -1,10 +1,10 @@
-FROM helpermethod/docker-lua:0.3.0
+FROM helpermethod/docker-lua:0.4.0
 
 USER root
 WORKDIR /
 
-ARG LUAROCKS_VERSION=3.0.1
-ARG LUAROCKS_DOWNLOAD_SHA256=b989c4b60d6c9edcd65169e5e42fcffbd39cdbebe6b138fa5aea45102f8d9ec0
+ARG LUAROCKS_VERSION=3.0.4
+ARG LUAROCKS_DOWNLOAD_SHA256=1236a307ca5c556c4fed9fdbd35a7e0e80ccf063024becc8c3bf212f37ff0edf
 
 RUN set -o errexit -o nounset \
  && apk --no-cache add --virtual build-dependencies \
