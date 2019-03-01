@@ -21,13 +21,13 @@ A Docker image for bulding [Lua](https://www.lua.org/) applications.
 # run the latest version
 $ docker run -it helpermethod/docker-luarocks sh
 # run a specific version
-$ docker run -it helpermethod/docker-luarocks:0.4.0 sh
+$ docker run -it helpermethod/docker-luarocks:0.5.0 sh
 ```
 
 ## Using docker-luarocks as a base image
 
 ```dockerfile
-FROM helpermethod/docker-luarocks:0.4.0
+FROM helpermethod/docker-luarocks:0.5.0
 
 USER ROOT
 WORKDIR /
