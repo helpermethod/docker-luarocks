@@ -1,6 +1,6 @@
 # docker-luarocks
 
-A Docker image for Luarocks.
+A Docker image for bulding [Lua](https://www.lua.org/) applications.
 
 [![Docker Build Status](https://img.shields.io/docker/build/helpermethod/docker-luarocks.svg)](https://hub.docker.com/r/helpermethod/docker-luarocks)
 [![Docker Automated build](https://img.shields.io/docker/automated/helpermethod/docker-luarocks.svg)](https://hub.docker.com/r/helpermethod/docker-luarocks)
