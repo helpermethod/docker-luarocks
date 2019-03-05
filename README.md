@@ -18,9 +18,9 @@ A Docker image for building [Lua](https://www.lua.org/) applications.
 ## Running a prebuilt image
 
 ```sh
-# run the latest version
+# run latest version
 $ docker run -it helpermethod/docker-luarocks sh
-# run a specific version
+# run specific version
 $ docker run -it helpermethod/docker-luarocks:0.5.0 sh
 ```
 
