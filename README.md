@@ -1,6 +1,6 @@
 # docker-luarocks
 
-A Docker image for bulding [Lua](https://www.lua.org/) applications.
+A Docker image for building [Lua](https://www.lua.org/) applications.
 
 [![Docker Build Status](https://img.shields.io/docker/build/helpermethod/docker-luarocks.svg)](https://hub.docker.com/r/helpermethod/docker-luarocks)
 [![Docker Automated build](https://img.shields.io/docker/automated/helpermethod/docker-luarocks.svg)](https://hub.docker.com/r/helpermethod/docker-luarocks)
@@ -18,16 +18,16 @@ A Docker image for bulding [Lua](https://www.lua.org/) applications.
 ## Running a prebuilt image
 
 ```sh
-# run the latest version
+# run latest version
 $ docker run -it helpermethod/docker-luarocks sh
-# run a specific version
-$ docker run -it helpermethod/docker-luarocks:0.4.0 sh
+# run specific version
+$ docker run -it helpermethod/docker-luarocks:0.5.0 sh
 ```
 
 ## Using docker-luarocks as a base image
 
 ```dockerfile
-FROM helpermethod/docker-luarocks:0.4.0
+FROM helpermethod/docker-luarocks:0.5.0
 
 USER ROOT
 WORKDIR /
