@@ -17,7 +17,7 @@ RUN set -o errexit -o nounset \
     openssl \
     zip \
  && printf 'Downloading LuaRocks\n' \
- && wget -O luarocks.tar.gz https://luarocks.github.io/luarocks/releases/luarocks-${LUAROCKS_VERSION}.tar.gz \
+ && wget --no-verbose -O luarocks.tar.gz https://luarocks.github.io/luarocks/releases/luarocks-${LUAROCKS_VERSION}.tar.gz \
  && printf 'Checking download hash\n' \
  && printf '%s  luarocks.tar.gz' "$LUAROCKS_DOWNLOAD_SHA256" | sha256sum -c - \
  && printf 'Installing LuaRocks\n' \
